@@ -39,7 +39,12 @@ h2 {
   width: 100%;
   height: 100vh;
   position: absolute;
-  background: url("img/image.jpg");
+  background: rgb(216, 227, 231);
+  background: linear-gradient(
+    0deg,
+    var(--bg-color) -50%,
+    var(--secondary) 100%
+  );
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -88,8 +93,6 @@ h2 {
   text-decoration: none;
   transition: color 0.2s ease-in;
 }
-
-/*  */
 
 .hamburger {
   height: 50px;
@@ -144,8 +147,6 @@ h2 {
 .hamburger.open > div::after {
   transform: rotate(-45deg);
 }
-
-/*  */
 
 section {
   width: 100%;
@@ -479,6 +480,93 @@ footer {
   }
 }
 
+/* projects details */
+
+.details-overlay {
+  background-color: var(--font-color);
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.2s ease-in-out;
+  cursor: zoom-out;
+}
+
+.details-overlay.open {
+  opacity: 0.9;
+  visibility: visible;
+}
+
+.details-container {
+  display: grid;
+  grid-area: "a" "b" "c";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  background-color: var(--bg-color);
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  margin: auto;
+  padding: 10px;
+  width: calc(100vw - 50px);
+  height: 80%;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  z-index: 1005;
+  transform: translateX(-50%) translateY(100px);
+  transition: all 0.2s ease-in-out;
+  overflow-y: scroll;
+}
+
+.details-container.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.image-wrapper {
+  width: calc(100vw - 70px);
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.project-links svg {
+  width: 30px;
+  height: 30px;
+  transition: fill 0.2s ease-in-out;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.tools > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 15px;
+}
+
 @media only screen and (min-width: 768px) {
   .greeting {
     font-size: 1.8rem;
@@ -589,6 +677,10 @@ footer {
   .work-grid .overlay:hover {
     opacity: 1;
   }
+
+  .details-container {
+    width: 900px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -653,6 +745,14 @@ footer {
 
   .contact-form form {
     width: 500px;
+  }
+
+  .details-container {
+    width: 1200px;
+  }
+
+  .project-links svg:hover {
+    fill: var(--secondary);
   }
 }
 
