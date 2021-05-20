@@ -83,15 +83,15 @@ h2 {
   text-align: center;
 }
 
-.site-nav.scrolled {
-  background-color: var(--primary);
-}
-
 .site-nav div {
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.site-nav.scrolled {
+  background-color: var(--primary);
 }
 
 .site-nav.open {
@@ -676,6 +676,10 @@ footer {
     transform: translateX(0);
     gap: 20px;
     padding: 10px 20px;
+  }
+
+  .site-nav.scrolled {
+    background-color: transparent;
   }
 
   .site-nav div {
