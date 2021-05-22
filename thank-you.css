@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #d8e3e7;
+  --secondary: #51c4d3;
+  --primary: #126e82;
+  --font-color: #132c33;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  color: var(--font-color);
+  background: rgb(216, 227, 231);
+  background: linear-gradient(
+    0deg,
+    var(--bg-color) -50%,
+    var(--secondary) 100%
+  );
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--bg-color);
+  text-shadow: 0 0 5px var(--font-color);
+  font-size: 2.5rem;
+}
+
+p {
+  text-align: center;
+}
+
+.message {
+  margin: 30px 0;
+  line-height: 1.5rem;
+}
+
+footer {
+  height: 50px;
+  background-color: #456268;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 50px;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+  }
+
+  .message {
+    margin: 40px 0;
+    line-height: 3.5rem;
+  }
+}

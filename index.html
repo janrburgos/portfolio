@@ -305,11 +305,13 @@
             </div>
           </div>
           <div class="contact-form">
-            <form>
-              <input type="text" placeholder="Name">
-              <input type="number" placeholder="Phone Number">
-              <input type="email" placeholder="Email">
-              <textarea name="contact-message" id="contact-message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <form action="https://formsubmit.co/janrburgos@gmail.com" method="POST">
+              <input type="hidden" name="_next" value="https://janrburgos.github.io/portfolio/thank-you.html" />
+              <input type="hidden" name="_subject" value="From Web Dev Portfolio">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="number" name="phone-number" placeholder="Phone Number">
+              <input type="email" name="email" placeholder="Email Address" required>
+              <textarea name="contact-message" id="contact-message" cols="30" rows="10" placeholder="Your Message Here" required></textarea>
               <input type="submit">
             </form>
           </div>
