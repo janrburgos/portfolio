@@ -252,10 +252,9 @@ section::before:target {
   font-size: 1.5rem;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+.skills-list ul {
+  margin-top: 5px;
+  columns: 2;
 }
 
 .skill {
@@ -623,8 +622,15 @@ footer {
     width: 100%;
   }
 
-  .description {
+  .skills-title {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  .description,
+  .skills-list ul {
     font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 
   .work-grid {
@@ -693,8 +699,8 @@ footer {
       "title title title"
       "b d d"
       "c d d";
-    grid-template-rows: auto 300px 1fr;
-    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 350px 1fr;
+    grid-template-columns: 350px 1fr;
   }
 
   .skills-title {
