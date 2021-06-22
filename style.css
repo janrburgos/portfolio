@@ -306,6 +306,7 @@ section::before:target {
 }
 
 .work-grid .overlay {
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
@@ -321,6 +322,11 @@ section::before:target {
   text-shadow: 0 0 3px var(--font-color);
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
+}
+
+#appointment {
+  background-image: url("img/appointment.png");
 }
 
 #jmugs {
@@ -341,10 +347,6 @@ section::before:target {
 
 #clock {
   background-image: url("img/clock.PNG");
-}
-
-#todo {
-  background-image: url("img/todo.PNG");
 }
 
 /* contact */
