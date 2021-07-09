@@ -325,6 +325,10 @@ section::before:target {
   text-align: center;
 }
 
+#prigider {
+  background-image: url("img/prigider.PNG");
+}
+
 #appointment {
   background-image: url("img/appointment.png");
 }
@@ -339,10 +343,6 @@ section::before:target {
 
 #pokemon {
   background-image: url("img/pokemon-1.PNG");
-}
-
-#resto {
-  background-image: url("img/resto-1.PNG");
 }
 
 #clock {
@@ -552,6 +552,11 @@ footer {
   display: flex;
   justify-content: center;
   gap: 50px;
+  margin-top: 10px;
+}
+
+.project-links a:first-child svg {
+  animation: colorchange 3s linear infinite;
 }
 
 .project-links svg {
@@ -829,5 +834,32 @@ footer {
     width: 450px;
     height: 250px;
     margin: 0;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    fill: red;
+  }
+  14% {
+    fill: orange;
+  }
+  28% {
+    fill: yellow;
+  }
+  42% {
+    fill: green;
+  }
+  57% {
+    fill: blue;
+  }
+  71% {
+    fill: indigo;
+  }
+  85% {
+    fill: violet;
+  }
+  100% {
+    fill: red;
   }
 }

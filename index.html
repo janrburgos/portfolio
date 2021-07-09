@@ -72,6 +72,11 @@
         <div class="works-container">
           <h2 class="works-title">My Works</h2>
           <div class="work-grid">
+            <div class="card" id="prigider">
+              <div class="project overlay">
+                <div class="title">PRIGIDER</div>
+              </div>
+            </div>
             <div class="card" id="appointment">
               <div class="project overlay">
                 <div class="title">ONLINE APPOINTMENT SYSTEM</div>
@@ -90,11 +95,6 @@
             <div class="card" id="pokemon">
               <div class="project overlay">
                 <div class="title">POKEMON APP</div>
-              </div>
-            </div>
-            <div class="card" id="resto">
-              <div class="project overlay">
-                <div class="title">RESTO APP</div>
               </div>
             </div>
             <div class="card" id="clock">
@@ -142,6 +142,36 @@
     <footer><small>&copy; JanR Burgos | All Rights Reserved</small></footer>
     <!-- projects details -->
     <div class="details-overlay"></div>
+
+        <!-- prigider -->
+        <div class="details-container" id="appointment-details">
+          <div class="image-wrapper">
+            <img src="img/prigider2.png" alt="prigider">
+            <div class="project-links">
+              <a href="https://janrburgos.github.io/prigider/" target="_blank">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1H6v1H2v12h12v-4h1v4.5l-.5.5h-13l-.5-.5v-13l.5-.5z"></path><path d="M15 1.5V8h-1V2.707L7.243 9.465l-.707-.708L13.293 2H8V1h6.5l.5.5z"></path></svg>
+              </a>
+              <a href="https://github.com/janrburgos/prigider" target="_blank">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+              </a>
+            </div>
+          </div>
+          <div class="tools">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>React</div>
+            <div>Redux</div>
+            <div>MongoDB</div>
+            <div>Express.js</div>
+            <div>Node.js</div>
+          </div>
+          <h3>Prigider</h3>
+          <div class="details-description">
+            An inventory management system application that will help restaurants keep track of their food ingredients inventory. A restaurant that uses this app can determine whether they can make a recipe based on their existing inventory and they can also determine how many recipes they can make. This app also has a basket functionality in which you can automatically update your inventory whenever you make a single or multiple recipes. This is a MERN stack application and this also uses cloud services like MongoDB Atlas and Cloudinary. This is a group project composed of two developers.
+          </div>
+        </div>
+
     <!-- online appointment system -->
     <div class="details-container" id="appointment-details">
       <div class="image-wrapper">
@@ -170,6 +200,7 @@
         A full stack application that lets applicants apply for documents online. This application was inspired by MARINA government agency's MISMO online appointment system. This full stack web app solves the problem of applicants spending a whole day's worth of time waiting in line on an office for processing documents and shortens it into one hour and also avoiding the hassle of bringing wrong or incomplete documents on appointment day. This app uses several npm packages like Moment.js for setting up appointment date and JSPDF for dynamically creating the document applied for by the applicant. This app also uses MongoDB Atlas for storing applicants' data online and Cloudinary for uploading applicants' documents to the cloud.
       </div>
     </div>
+
     <!-- jmugs -->
     <div class="details-container" id="jmugs-details">
       <div class="image-wrapper">
@@ -193,6 +224,7 @@
         A restaurant website created using HTML, vanilla CSS and vanilla JavaScript. The main page has a contact form at the bottom. The website also has a services page which displays all the services offered by the restaurant and also a menu page that displays all the menu. The menu page also has a search functionality to easily find a certain menu and it also has a cart functionality at the side of the page.
       </div>
     </div>
+
     <!-- deal or no deal -->
     <div class="details-container" id="dond-details">
       <div class="image-wrapper">
@@ -213,9 +245,10 @@
       </div>
       <h3>Deal or No Deal</h3>
       <div class="details-description">
-        A JavaScript game based on the tv show Deal or No Deal. The game mechanics of this game is almost similar to the actual TV game show.
+        A JavaScript game based on the tv show Deal or No Deal. The game mechanics of this game is almost similar to the actual TV game show. Enjoy.
       </div>
     </div>
+
     <!-- pokemon app -->
     <div class="details-container" id="pokemon-details">
       <div class="image-wrapper">
@@ -241,31 +274,7 @@
         A Pokemon App created using create-react-app with React Router and Redux. The app displays all the pokemons on the home page. On the side of the page, there are pokemon types listed which when clicked, filters the pokemons to only that specific type. When a pokemon is clicked, the pokemon description will  be shown.
       </div>
     </div>
-    <!-- resto app -->
-    <div class="details-container" id="resto-details">
-      <div class="image-wrapper">
-        <img src="img/resto-2.PNG" alt="resto app">
-        <div class="project-links">
-          <a href="https://janrburgos.github.io/react-resto-app/" target="_blank">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 1H6v1H2v12h12v-4h1v4.5l-.5.5h-13l-.5-.5v-13l.5-.5z"></path><path d="M15 1.5V8h-1V2.707L7.243 9.465l-.707-.708L13.293 2H8V1h6.5l.5.5z"></path></svg>
-          </a>
-          <a href="https://github.com/janrburgos/react-resto-app" target="_blank">
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-          </a>
-        </div>
-      </div>
-      <div class="tools">
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>JavaScript</div>
-        <div>React</div>
-        <div>Redux</div>
-      </div>
-      <h3>Resto App</h3>
-      <div class="details-description">
-        A restaurant cart app created using create-react-app with Redux. The app displays all the menu items in which you can add, edit and delete each item. There is also a cart functionality with the subtotal and total price being calculated automatically every time you add or remove an item to the cart.
-      </div>
-    </div>
+
     <!-- digital clock -->
     <div class="details-container" id="clock-details">
       <div class="image-wrapper">
