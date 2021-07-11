@@ -29,6 +29,11 @@ a {
   color: inherit;
 }
 
+h1 {
+  font-size: 12.5vw;
+  line-height: 15vmin;
+}
+
 h2 {
   font-size: 2rem;
   text-align: center;
@@ -168,7 +173,7 @@ section::before:target {
 
 .header-text {
   height: 100vh;
-  padding: 100px 20px 0 20px;
+  padding: 10vh 20px 0 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -178,16 +183,11 @@ section::before:target {
 }
 
 .greeting {
-  font-size: 1.2rem;
-}
-
-.my-name {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 6vw;
 }
 
 .profession {
-  font-size: 1.6rem;
+  font-size: 5vw;
 }
 
 .resume {
@@ -225,7 +225,7 @@ section::before:target {
 
 .about-container .photo,
 .about-container .skills {
-  width: 275px;
+  width: clamp(250px, 85%, 400px);
   margin: 0 auto;
 }
 
@@ -242,6 +242,7 @@ section::before:target {
 .photo img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .skills {
@@ -294,7 +295,8 @@ section::before:target {
 }
 
 .work-grid .card {
-  border: 1px solid black;
+  box-shadow: 0 2px 5px 2px silver;
+  border-radius: 5px;
   width: calc(100vw - 60px);
   height: calc(calc(100vw - 60px) / 16 * 9);
   margin: 20px auto 0 auto;
@@ -303,6 +305,7 @@ section::before:target {
   align-items: center;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .work-grid .overlay {
@@ -419,6 +422,7 @@ section::before:target {
   padding: 5px;
   background-color: var(--secondary);
   color: var(--font-color);
+  border-radius: 5px;
 }
 
 .contact-form input:focus,
@@ -522,6 +526,7 @@ footer {
   position: fixed;
   margin: auto;
   padding: 10px;
+  border-radius: 5px;
   width: calc(100vw - 50px);
   height: 80%;
   top: 50%;
@@ -546,6 +551,7 @@ footer {
 
 .image-wrapper img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .project-links {
@@ -570,6 +576,7 @@ footer {
   flex-wrap: wrap;
   gap: 10px;
   padding: 10px 0;
+  font-size: 0.9rem;
 }
 
 .tools > div {
@@ -585,23 +592,23 @@ footer {
 .details-container h3 {
   margin-top: 10px;
   margin-bottom: 5px;
+  padding: 0 10px;
 }
 
-.details-container h3,
 .details-description {
-  padding: 0 10px;
+  padding: 0 10px 10px 10px;
 }
 
 @media only screen and (min-width: 768px) {
   .greeting {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 
   .profession {
     font-size: 2.5rem;
   }
 
-  .my-name {
+  h1 {
     font-size: 6rem;
     line-height: 6rem;
   }
@@ -752,11 +759,7 @@ footer {
     min-height: 100vh;
   }
 
-  .greeting {
-    font-size: 2.5rem;
-  }
-
-  .my-name {
+  h1 {
     font-size: 10rem;
     line-height: 9rem;
   }
