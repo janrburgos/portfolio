@@ -27,6 +27,11 @@ body {
 
 a {
   color: inherit;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #126e82;
 }
 
 h1 {
@@ -306,6 +311,7 @@ section::before:target {
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  transition: transform 0.2s ease-in-out;
 }
 
 .work-grid .overlay {
@@ -657,6 +663,10 @@ footer {
     margin: 50px auto 0 auto;
   }
 
+  .work-grid .card:hover {
+    transform: translateY(-5px);
+  }
+
   .work-grid .title {
     font-size: 2rem;
   }
@@ -734,7 +744,8 @@ footer {
   }
 
   .details-container {
-    width: 900px;
+    width: 750px;
+    height: 90%;
   }
 
   .image-wrapper {
@@ -811,7 +822,7 @@ footer {
   }
 
   .details-container {
-    width: 1200px;
+    width: 900px;
   }
 
   .project-links svg:hover {
